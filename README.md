@@ -1,3 +1,3 @@
 # Stoney-Grove-Farm-LLC
-Avery Willard
-Catherine Kujawski
+Avery Willard,
+Catherine Kujawski,
