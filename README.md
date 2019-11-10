@@ -1,3 +1,4 @@
 # Stoney-Grove-Farm-LLC
 Avery Willard
-Alex Alpert
+Catherine Kujawski
+Sierris Smith
