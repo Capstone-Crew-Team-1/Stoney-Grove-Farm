@@ -3,4 +3,8 @@ Catherine Kujawski,
 Sierris Smith,
 Justin Van Loo,
 Jaeger Staeven,
+<<<<<<< HEAD
 Test Code
+=======
+Michael Hemmila,
+>>>>>>> master
