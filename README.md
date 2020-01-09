@@ -1,10 +1,8 @@
 # Stoney-Grove-Farm-LLC
 Catherine Kujawski,
 Sierris Smith,
+Alex Alpert,
 Justin Van Loo,
 Jaeger Staeven,
-<<<<<<< HEAD
-Test Code
-=======
-Michael Hemmila,
-TEST CODE
+James Marcie,
+Michael Hemmila.
