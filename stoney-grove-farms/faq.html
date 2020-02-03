@@ -92,7 +92,7 @@
     <!-- Page Content -->
     <div class="container">
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">FAQ</h1>
+      <h1 class="mt-4 mb-4">FAQ</h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -283,8 +283,25 @@
             </div>
           </div>
         </div>
+
+
+        <div class="control-group form-group mt-4">
+          <div class="controls">
+            <h5 class="text-center">
+            <a>Ask a question:</a></h5>
+            <textarea rows="5" cols="100" class="form-control" id="enteraquestion" required data-validation-required-question="Please enter your question" maxlength="250" style="resize:none"></textarea>
+          </div>
+        </div>
+        <div id="success"></div>
+        <!-- For success/fail messages -->
+        <button type="submit" class="btn btn-primary" id="enteraquestion">Submit</button>
+      </form>
+    </div>
       </div>
     </div>
+
+  
+
     <!-- /.container -->
 
     <!-- Footer -->
