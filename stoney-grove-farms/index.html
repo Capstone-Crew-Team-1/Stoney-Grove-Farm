@@ -20,7 +20,7 @@
     />
   </head>
 
-  <body>
+  <div>
     <!-- Navigation -->
     <nav
       class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
@@ -63,6 +63,9 @@
             <li class="nav-item">
               <a class="nav-link" href="FAQ.html">FAQ</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -90,9 +93,9 @@
             class="carousel-item active"
             style="background-image: url('images/honey-spoon.jpg')"
           >
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+            <div class="carousel-caption d-none d-md-block ">
+              <h3>Welcome To Stoney Grove Farm</h3>
+              <!--<p>This is a description for the first slide.</p>-->
             </div>
           </div>
           <!-- Slide Two -->
@@ -101,8 +104,8 @@
             style="background-image: url('images/honey-honeycomb.jpg')"
           >
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <!--<h3>Second Slide</h3>-->
+              <!--<p>This is a description for the second slide.</p>-->
             </div>
           </div>
           <!-- Slide Three -->
@@ -111,8 +114,8 @@
             style="background-image: url('images/honey-food.jpg')"
           >
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <!--<h3>Third Slide</h3>-->
+              <!--<p>This is a description for the third slide.</p>-->
             </div>
           </div>
         </div>
@@ -148,10 +151,8 @@
           <div class="card h-100">
             <h4 class="card-header">Featured Product</h4>
             <div class="card-body">
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente esse necessitatibus neque.
-              </p>
+              <img class="card-img-top img-fluid" src="images/strawberryjam.jpg">
+              <p class="card-text">Fresh Strawberry Jam</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -161,68 +162,186 @@
       </div>
       <!-- /.row -->
 
-      <!-- Portfolio Section -->
+      <!-- Recipe Section -->
       <h2>Featured Recipes</h2>
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"
-              ><img
-                class="card-img-top"
-                src="http://placehold.it/700x400"
-                alt=""
-            /></a>
+      <div class="card-columns">
+        <!--Card of recipe-->
+        <div class="card" style="height:600px">
+          <!--Front of card-->
+          <div class="front"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
+            <div class="overflow-auto" style="height:600px">
+              <img class="card-img-top img-fluid"
+                   src="images/grilled-peaches-honey.jpg"
+                   alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Grilled Peaches</h4>
+                <p class="card-text">
+                  Grilled peaches with vanilla ice cream and honey is a
+                  perfect, simple and scrumptious summertime dessert.
+                  <br />
+                  <b>(Click for Instructions)</b>
+                </p>
+                <div class="btn1" style="text-align:right">
+                  <button class="btn btn-light" data-placement="top">
+                    Ingredients
+                  </button>
+                </div>
+                <br />
+                <p class="card-text" style="text-align:right;">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Back of the card-->
+          <div class="back"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
             <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Recipe One</a>
-              </h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus
-                sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum
-                tempora ex quae? Nihil, dolorem!
-              </p>
+              <div class="overflow-auto" style="height: 550px">
+                <h4 class="card-title" style="font-style:italic">Grilled Peaches Instructions</h4>
+                <p class="timeInstructions" style="border:groove; border:inset">
+                  Prep Time: 45 mins <br />
+                  Cook Time: 30 mins <br />
+                  Total Time: 75 mins <br />
+                  Servings: 4
+                </p>
+                <p class="card-text">
+                  1. In a small bowl add the butter and stir until smooth. Add
+                  the cinnamon sugar, granulated sugar and salt and mix until
+                  combined.
+                  <br />2. Heat grill to high. Brush peaches with oil and grill
+                  until golden brown and just cooked through. Top each with a
+                  few teaspoons of the butter and garnish with mint leaves.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"
-              ><img
-                class="card-img-top"
-                src="http://placehold.it/700x400"
-                alt=""
-            /></a>
+        <!--Card of recipe-->
+        <div class="card" style="height:600px; ">
+          <!--Front of card-->
+          <div class="front"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
+            <div class="overflow-auto" style="height:600px">
+              <img class="card-img-top img-fluid"
+                   src="images/HoneyCastella.jpg"
+                   alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Honey Kasutera</h4>
+                <p class="card-text">
+                  Honey Kasutera (Honey Castella)-fine textured Japanese
+                  sponge cake raised solely by egg foam.
+                  <br />
+                  <b>(Click for Instructions)</b>
+                </p>
+                <div class="btn2" style="text-align:right">
+                  <button class="btn btn-light" data-placement="top">
+                    Ingredients
+                  </button>
+                </div>
+                <br />
+                <p class="card-text" style="text-align:right;">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Back of the card-->
+          <div class="back"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
             <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Recipe Two</a>
-              </h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                viverra euismod odio, gravida pellentesque urna varius vitae.
-              </p>
+              <div class="overflow-auto" style="height: 550px">
+                <h4 class="card-title" style="font-style:italic">Honey Kastutera Instructions</h4>
+                <p class="timeInstructions" style="border:groove; border:inset">
+                  Prep Time: 45 mins <br />
+                  Cook Time: 30 mins <br />
+                  Total Time: 75 mins <br />
+                  Servings: 4
+                </p>
+                <p class="card-text">
+                  1. Line a 7½ in x 3½in (9cm x 19cm) loaf pan with aluminum
+                  foil followed by parchment paper. Preheat oven to 325°F
+                  (165°C).
+                  <br />2. Place egg whites in mixing bowl and beat at high
+                  speed (speed 10*) for 30 seconds until slightly foamy. Add
+                  sugar in 2 to 3 increments until firm peaks form, about 4
+                  minutes. <br />3. Add yolks one at a time at medium low
+                  speed (speed 4*) until well combined, about 1 minute. Add
+                  sifted bread flour and beat until just combined. <br />4.
+                  Pour in honey mixture and continue to beat for 1 minute.
+                  <br />5. Pour batter through a sieve into cake pan. Press
+                  with a spatula to help batter go through sieve. Tap pan on
+                  the counter to remove air bubbles. Using a spatula, smoothen
+                  the top of batter to remove any remaining bubbles. <br />6.
+                  Bake in preheated oven for 45 minutes or until top is evenly
+                  browned. Toothpick inserted into cake should come out clean.
+                  <br />7. Remove pan from oven and drop it from a one foot
+                  height onto the counter to prevent shrinkage <br />8. When
+                  cake is cool enough to handle, remove from pan. Peel off
+                  parchment paper and turn it upside down onto a fresh piece
+                  of parchment paper. Wrap with plastic wrap and leave
+                  overnight at room temperature** to preserve moisture in the
+                  cake and for flavor to develop. <br />9. To serve, cut off
+                  edges on all sides except the top and bottom with a very
+                  sharp knife. Cut into thick slices using a sawing motion.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"
-              ><img
-                class="card-img-top"
-                src="http://placehold.it/700x400"
-                alt=""
-            /></a>
+        <!--Card of recipe-->
+        <div class="card" style="height:600px">
+          <!--Front of card-->
+          <div class="front"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
+            <div class="overflow-auto" style="height:600px">
+              <img class="card-img-top img-fluid"
+                   src="images/honey-mustard-pretzel-snack-mix.jpg"
+                   alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Honey Mustard Pretzels</h4>
+                <p class="card-text">
+                  These Honey Mustard Pretzel Pieces are bursting with flavor
+                  and perfectly crunchy! This sweet and salty combination is
+                  addictive!
+                  <br />
+                  <b>(Click for Instructions)</b>
+                </p>
+                <div class="btn3" style="text-align:right">
+                  <button class="btn btn-light" data-placement="top">
+                    Ingredients
+                  </button>
+                </div>
+                <br />
+                <p class="card-text" style="text-align:right;">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Back of the card-->
+          <div class="back"
+               style="backface-visibility: hidden; background: #fafafa; width: 100%; height: 100%; position: absolute;">
             <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Recipe Three</a>
-              </h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                quisquam, error quod sed cumque, odio distinctio velit nostrum
-                temporibus necessitatibus et facere atque iure perspiciatis
-                mollitia recusandae vero vel quam!
-              </p>
+              <div class="overflow-auto" style="height: 550px">
+                <h4 class="card-title" style="font-style:italic">Honey Mustard Pretzels Instructions</h4>
+                <p class="timeInstructions" style="border:groove; border:inset">
+                  Prep Time: 45 mins <br />
+                  Cook Time: 30 mins <br />
+                  Total Time: 75 mins <br />
+                  Servings: 4
+                </p>
+                <p class="card-text">
+                  1. Preheat oven to 250 degrees.<br />
+                  2. Combine melted butter, honey, Dijion mustard, onion
+                  powder, garlic powder and dried mustard. Pour over pretzel
+                  pieces and stir until coated.<br />
+                  3. Pour onto a cookie sheet and spread out evenly. Bake for
+                  1 hour and stir every 15 minutes.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -240,22 +359,26 @@
             </li>
             <li>Syrups</li>
             <li>Organic Beef</li>
+            <li>Eggs</li>
+            <li>Jam</li>
+            <li>Merchandise</li>
+
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis,
-            omnis doloremque non cum id reprehenderit, quisquam totam aspernatur
-            tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum
-            ducimus unde.
+            We have a store stocked up with all of your favorites.
+            <br>They are available for pick up by appointment
+            or to be shipped for your convenience!
           </p>
         </div>
         <div class="col-lg-6">
           <img
             class="img-fluid rounded"
-            src="http://placehold.it/700x450"
+            src="images/shopimg1.jpg"
             alt=""
           />
         </div>
       </div>
+
       <!-- /.row -->
 
       <hr />
@@ -264,9 +387,7 @@
       <div class="row mb-4">
         <div class="col-md-8">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias,
-            expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo
-            praesentium cum alias asperiores commodi.
+            Farm fresh produce and Stoney Grove Farm merchandise is only a click away!
           </p>
         </div>
         <div class="col-md-4">
@@ -278,14 +399,14 @@
 
     <!-- Footer -->
     <footer class=" py-3 col-12 container bg-dark">
-      <div class=" row ">
+      <div class=" row">
         <div class="col-6 my-sm-4">
           <p class="text-white ">Copyright &copy; Stoney Grove Farms 2020</p>
         </div>
         <div class="col-6">
           <div class="float-sm-right ">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram "></a>
+            <a href="https://www.facebook.com/Stoney-Grove-Farm-102158217927307/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/explore/locations/102158217927307/stoney-grove-farm/?hl=en" class="fa fa-instagram "></a>
           </div>
         </div>
       </div>
@@ -293,6 +414,9 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.flip.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
   </body>
 </html>
