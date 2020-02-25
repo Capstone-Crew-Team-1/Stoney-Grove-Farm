@@ -2,4 +2,17 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp modern-business.css $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH    
+    - /bin/cp Blog.html $DEPLOYPATH
+    - /bin/cp directory.html $DEPLOYPATH
+    - /bin/cp faq.html $DEPLOYPATH
+    - /bin/cp pricing.html $DEPLOYPATH
+    - /bin/cp Products.html $DEPLOYPATH
+    - /bin/cp recipes.html $DEPLOYPATH
+    - /bin/cp Resources.html $DEPLOYPATH
+    - /bin/cp sidebar.html $DEPLOYPATH
+    - /bin/cp suppliers.html $DEPLOYPATH
+
