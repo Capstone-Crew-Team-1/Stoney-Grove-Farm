@@ -25,6 +25,11 @@ $(document).ready(function () {
 
     <!--Handles card flip-->
     $('.card').flip();
+
+    <!--Contact Modal-->
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 });
 
 
