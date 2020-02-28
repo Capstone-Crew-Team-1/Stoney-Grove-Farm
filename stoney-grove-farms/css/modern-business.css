@@ -139,4 +139,22 @@ input::-webkit-inner-spin-button {
 input:disabled{
   background-color:white;
 }
-       
+
+.welcome-img {
+  background-image: url("images/barn pic.jpg");
+  background-color: #0c5460;
+}
+
+#banner {
+  background-color: gold;
+}
+
+.btn-contact {
+  background-color: #fbc838;
+}
+
+.carousel-caption h2, h1{
+  background-color: rgba(245, 245, 245, .75);
+  color: black;
+  border-radius: 5%;
+}
