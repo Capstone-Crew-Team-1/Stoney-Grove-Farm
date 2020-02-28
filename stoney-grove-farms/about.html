@@ -12,60 +12,87 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet"/>
 
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+
     <!-- Social media buttons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 
 <body>
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container">
         <!-- Company logo -->
         <a class="navbar-brand" href="index.html">
-            <img src="images/StoneyGroveLogo (1).png" alt="Stoney Grove Farms Logo" width="50" height="50" class="d-inline-block align-middle mr-2">
-            <!-- Logo Text -->
-            <span class="text-uppercase font-weight-bold">Stoney Grove Farm</span>
+          <img
+            src="images/StoneyGroveLogo (1).png"
+            alt="Stoney Grove Farms Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-middle mr-2"
+          />
+          <!-- Logo Text -->
+          <span class="row text-uppercase font-weight-bold">Stoney Grove Farm</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="recipes.html">Recipes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="FAQ.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Blog.html">Blog</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <!-- Button trigger modal -->
+            <li class="nav-item ml-2">
+            <button type="button" class="btn btn-contact" data-toggle="modal" data-target="#exampleModalLong">
+              Contact Us
+            </button>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+        <a href="cart">
+          <img src="images/cart.png" alt="cart" width="50" height="50">
+        </a>
+        <a href="#" class="fas fa-user-alt fa-2x px-3" style= "color:gold">
+        </a>
+      </div>
+    </nav>
 
 <!-- Page Content -->
 <div class="container">
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Stoney Grove Farm</h1>
+    <h1 class="mt-5">Stoney Grove Farm</h1>
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
             <a href="index.html">Home</a>
         </li>
         <li class="breadcrumb-item active">About</li>
     </ol>
-</div>
 
     <!-- Intro Content -->
-    <div class="container">
-        <div class="row">
+    <div class="row">
         <div class="col-lg-6 mb-4 lp-4 embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/jYKNYNXk7hY" frameboarder="0" allow="accelerometer; autoplay; encrypted-media; gyrscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -75,9 +102,9 @@
             </p>
             <p>Down Below we have provided some information about two of our collaboration partners. Click on the link to check out more on their Facebook account.</p>
             </p>
+
         </div>
     </div>
-
     <!-- Content Row -->
     <div class="row">
 
@@ -173,6 +200,91 @@
         </div>
     </div>
 </footer>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Content Row -->
+                <div class="row">
+                    <!-- Map Column -->
+                    <div class="col-lg-8 mb-4">
+                        <!-- Embedded Google Map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.0108821333606!2d-85.28477928427617!3d43.68953715809793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8818caadf80089d3%3A0xe491ee8e3c8105a4!2s15300%20100th%20Ave%2C%20Rodney%2C%20MI%2049342!5e0!3m2!1sen!2sus!4v1582772513199!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <!-- Contact Details Column -->
+                    <div class="col-lg-4 mb-4">
+                        <h3>Contact Details</h3>
+                        <p>
+                            <a href="https://www.google.com/maps/place/15300+100th+Ave,+Rodney,+MI+49342/@43.6895333,-85.2825906,17z/data=!4m5!3m4!1s0x8818caadf80089d3:0xe491ee8e3c8105a4!8m2!3d43.6895333!4d-85.2825906"> 15300 100th Avenue Rodney, Michigan</a>
+                        </p>
+                        <p>
+                            <abbr title="Phone">Phone</abbr>: <a href="tel:+1-231-250-0574">+1 (231) 250-0574</a>
+                        </p>
+                        <p>
+                            <abbr title="Email">Email</abbr>:
+                            <a href="mailto:rgbrowers@yahoo.com">rgbrowers@yahoo.com
+                            </a>
+                        </p>
+                        <p>
+                            <abbr title="Hours">Hours</abbr>: By Appointment
+                        </p>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Contact Form -->
+                <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+                <div class="row">
+                    <div>
+                        <h3>Send us a Message</h3>
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Full Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Message:</label>
+                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
