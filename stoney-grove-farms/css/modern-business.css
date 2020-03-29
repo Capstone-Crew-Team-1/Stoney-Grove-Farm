@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -30,7 +29,7 @@
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
@@ -61,23 +60,22 @@ footer {
   text-align: center;
 }
 
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color:transparent) {
-
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .number-input.def-number-input.safari_only button:before,
     .number-input.def-number-input.safari_only button:after {
-      margin-top: -.3rem;
+      margin-top: -0.3rem;
     }
   }
 }
 
 .cart-button {
-    right: 0px !important;
+  right: 0px !important;
 }
 
 .qty .cart-button {
-    text-align: unset !important;
-    float: right;
+  text-align: unset !important;
+  float: right;
 }
 
 .qty .count {
@@ -90,7 +88,7 @@ footer {
   padding: 0 2px;
   min-width: 30px;
   text-align: center;
-  border: 1px solid black; 
+  border: 1px solid black;
 }
 
 .qty .plus {
@@ -100,10 +98,10 @@ footer {
   color: white;
   width: 25px;
   height: 30px;
-  font: 30px/1 Arial,sans-serif;
+  font: 30px/1 Arial, sans-serif;
   text-align: center;
   border: 50%1px solid black;
-  }
+}
 
 .qty .minus {
   cursor: pointer;
@@ -112,7 +110,7 @@ footer {
   color: white;
   width: 25px;
   height: 30px;
-  font: 30px/1 Arial,sans-serif;
+  font: 30px/1 Arial, sans-serif;
   line-height: 25px;
   text-align: center;
   border: 50%;
@@ -123,37 +121,38 @@ div {
   text-align: center;
 }
 
-.minus:hover{
+.minus:hover {
   background-color: #717fe0 !important;
 }
 
-.plus:hover{
+.plus:hover {
   background-color: #717fe0 !important;
 }
 
 /*Prevent text selection*/
-span{
+span {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
 
-input{  
+input {
   border: 0;
   width: 2%;
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input:disabled{
-  background-color:white;
+input:disabled {
+  background-color: white;
 }
 
 .welcome-img {
-  background-image: url("images/barn pic.jpg");
+  background-image: url('images/barn pic.jpg');
   background-color: #0c5460;
 }
 
@@ -165,8 +164,9 @@ input:disabled{
   background-color: #fbc838;
 }
 
-.carousel-caption h2, h1{
-  background-color: rgba(245, 245, 245, .75);
+.carousel-caption h2,
+h1 {
+  background-color: rgba(245, 245, 245, 0.75);
   color: black;
   border-radius: 5%;
 }

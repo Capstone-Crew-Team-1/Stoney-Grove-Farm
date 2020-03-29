@@ -79,11 +79,16 @@
             </li>
           </ul>
         </div>
-        <a href="cart">
+
+    <!--Cart and Sing up/Login buttons -->
+        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#modalCart" data-tooltip="tooltip" title="Cart">
           <img src="images/cart.png" alt="cart" width="50" height="50">
-        </a>
-        <a href="#" class="fas fa-user-alt fa-2x px-3" style= "color:gold">
-        </a>
+        </button>
+
+
+        <button class="btn btn-white" data-toggle="modal" data-target="#loginModal" data-tooltip="tooltip" title="Sign-Up/Login">
+          <a href="#" class="fas fa-user-alt fa-2x px-3" style= "color:gold"></a>
+        </button>
       </div>
     </nav>
     <!-- Banner -->
@@ -300,9 +305,107 @@
         </div>
       </div>
     </div>
-          <!-- /.container -->
+
+    <!--Login Modal-->
+    <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-link" type="button" data-target="#signupModal">Sign-Up</button>
+            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+          </div>
         </div>
       </div>
+    </div>
+
+
+    <!-- Modal: modalCart -->
+    <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    <!--Header-->
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body">
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product name</th>
+          <th>Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <!--<tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+          <td><a><i class="fas fa-times"></i></a></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+          <td></td>
+          <td><a><i class="fas fa-times"></i></a></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+          <td></td>
+          <td><a><i class="fas fa-times"></i></a></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td></td>
+          <td></td>
+          <td><a><i class="fas fa-times"></i></a></td>
+        </tr>
+        <tr class="total">
+          <th scope="row">5</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>-->
+    </table>
+
+    </div>
+    <!--Footer-->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Checkout</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Modal: modalCart -->
+
+          <!-- /.container -->
+    </div>
+    </div>
     </div>
     </div>
 
@@ -314,26 +417,33 @@
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
     <script>
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-          0:{
-            items:1,
-            nav:true
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1,
+          nav:true
           },
           600:{
             items:3,
             nav:false
-          },
-          1000:{
-            items:5,
-            nav:true,
-            loop:false
-          }
-        }
-      })
+            },
+            1000:{
+              items:5,
+              nav:true,
+              loop:false
+              }
+            }
+    })
+
+    $(document).ready(function() {
+      $('body').tooltip({
+        selector: "[data-tooltip=tooltip]",
+        container: "body"
+        });
+    });
     </script>
   </body>
 </html>
