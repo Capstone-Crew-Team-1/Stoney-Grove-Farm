@@ -1,5 +1,5 @@
 
-<!--Popover that show list of ingredients-->
+//Popover that show list of ingredients
 
 $(document).ready(function () {
     $('.btnPotRoast').popover({
@@ -39,7 +39,55 @@ $(document).ready(function () {
         trigger: 'focus'
     });
 
-    <!--Handles card flip-->
+    $('.btnBeefStroganoff').popover({
+        title: 'Ingredients',
+        content:
+            '1 1/2 pounds beef sirloin steak, 1/2 inch thick, 8 ounces fresh mushrooms, sliced(2 1/ 2 cups), 2 medium onions, thinly sliced ,1 garlic clove, finely chopped, 1/4 cup butter, 1 1 / 2 cups Progresso beef flavored broth(from 32- ounce carton), 1 / 2 teaspoon salt, 1 teaspoon Worcestershire sauce, 1 / 4 cup Gold Medal all - purpose flour, 1 1/2 cups sour cream, 3 cups hot cooked egg noodles ',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    $('.btnClementineHoney').popover({
+        title: 'Ingredients',
+        content:
+            '100g pistachio or other nuts, 1/4 tsp ground cinnamon, plus more to serve, 8 clementines (seedless are best), 1 tsp butter, 2 tbsp runny honey plus more to serve, 1 tsp orange flower water (optional), 300g fresh or frozen raspberries, 500g pot reduced-fat Greek-style yogurt to serve',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    $('.btnHoneySwede').popover({
+        title: 'Ingredients',
+        content:
+            '1 large swede peeled and cut into large chunks, 2 tbsp olive oil, 1 tbsp clear honey, 1 tsp cumin seed, 1 large red chilli deseeded and chopped, small bunch coriander chopped',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    $('.btnHoneyMadeleine').popover({
+        title: 'Ingredients',
+        content:
+            '100g plain flour plus extra for dusting, 100g caster sugar, 100g butter melted, 1 whole egg separated plus 1 egg white, 1 tbsp clear honey, 1 tsp vanilla extract, icing sugar for dusting',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    $('.btnBeefBroccoli').popover({
+        title: 'Ingredients',
+        content:
+            '3 Tablespoons cornstarch divided, 1 pound flank steak cut into thin 1-inch pieces, 1/2 cup low sodium soy sauce, 3 Tablespoons packed light brown sugar, 1 Tablespoon minced garlic, 2 teaspoons grated fresh ginger, 2 Tablespoons vegetable oil divided, 4 cups small broccoli florets, 1/2 cup sliced white onions',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    $('.btnBeefTenderloin').popover({
+        title: 'Ingredients',
+        content:
+            '4 tablespoons butter divided, 1 teaspoon canola oil, 2 beef tenderloin steaks (1 inch thick and 4 ounces each), 1 cup sliced fresh mushrooms, 1 tablespoon chopped green onion, 1 tablespoon all-purpose flour, 1/8 teaspoon salt, Dash pepper, 2/3 cup chicken or beef broth, 1/8 teaspoon browning sauce optional',
+        selector: '.btn',
+        trigger: 'focus'
+    });
+
+    //Handles card flip
     $('.card').flip();
 
     <!--Contact Modal-->
