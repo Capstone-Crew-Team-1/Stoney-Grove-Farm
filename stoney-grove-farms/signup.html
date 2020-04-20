@@ -9,6 +9,9 @@
 
     <title>Sign-Up</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+   
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous"/>
@@ -16,200 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
-      body {
-        color: #fff;
-        background: #2a3634;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-      }
-      .form-control, .form-control:focus, .input-group-addon {
-        border-color: #e1e1e1;
-      }
-        .form-control, .btn {        
-            border-radius: 3px;
-        }
-      .signup-form {
-        width: 390px;
-        margin: 0 auto;
-        padding: 30px 0;
-      }
-        .signup-form form {
-        color: #999;
-        border-radius: 3px;
-          margin-bottom: 15px;
-            background: #fff;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-        }
-      .signup-form h2 {
-        color: #333;
-        font-weight: bold;
-            margin-top: 0;
-        }
-        .signup-form hr {
-            margin: 0 -30px 20px;
-        }
-      .signup-form .form-group {
-        margin-bottom: 20px;
-      }
-      .signup-form label {
-        font-weight: normal;
-        font-size: 13px;
-      }
-      .signup-form .form-control {
-        min-height: 38px;
-        box-shadow: none !important;
-      }	
-      .signup-form .input-group-addon {
-        max-width: 42px;
-        text-align: center;
-      }
-      .signup-form input[type="checkbox"] {
-        margin-top: 2px;
-      }   
-        .signup-form .btn{        
-            font-size: 16px;
-            font-weight: bold;
-        background: #fbc838;
-        border: none;
-        min-width: 140px;
-        }
-      .signup-form .btn:hover, .signup-form .btn:focus {
-        background: #293130;
-            outline: none;
-      }
-      .signup-form a {
-        color: #fff;	
-        text-decoration: underline;
-      }
-      .signup-form a:hover {
-        text-decoration: none;
-      }
-      .signup-form form a {
-        color: #fbc838;
-        text-decoration: none;
-      }	
-      .signup-form form a:hover {
-        text-decoration: underline;
-      }
-      .signup-form .fa {
-        font-size: 21px;
-      }
-      .signup-form .fa-paper-plane {
-        font-size: 18px;
-      }
-      .signup-form .fa-check {
-        color: #fff;
-        left: 17px;
-        top: 18px;
-        font-size: 7px;
-        position: absolute;
-      }
-      .modal-login {
-		width: 350px;
-	}
-	.modal-login .modal-content {
-		padding: 20px;
-		border-radius: 5px;
-		border: none;
-	}
-	.modal-login .modal-header {
-		border-bottom: none;
-        position: relative;
-		justify-content: center;
-	}
-	.modal-login .close {
-        position: absolute;
-		top: -10px;
-		right: -10px;
-	}
-	.modal-login h4 {
-		color: #636363;
-		text-align: center;
-		font-size: 26px;
-		margin-top: 0;
-	}
-	.modal-login .modal-content {
-		color: #999;
-		border-radius: 1px;
-    	margin-bottom: 15px;
-        background: #fff;
-		border: 1px solid #f3f3f3;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 25px;
-    }
-	.modal-login .form-group {
-		margin-bottom: 20px;
-	}
-	.modal-login label {
-		font-weight: normal;
-		font-size: 13px;
-	}
-	.modal-login .form-control {
-		min-height: 38px;
-		padding-left: 5px;
-		box-shadow: none !important;
-		border-width: 0 0 1px 0;
-		border-radius: 0;
-	}
-	.modal-login .form-control:focus {
-		border-color: #ccc;
-	}
-	.modal-login .input-group-addon {
-		max-width: 42px;
-		text-align: center;
-		background: none;
-		border-width: 0 0 1px 0;
-		padding-left: 5px;
-		border-radius: 0;
-	}
-    .modal-login .btn {        
-        font-size: 16px;
-        font-weight: bold;
-		background: #fbc838;
-        border-radius: 3px;
-		border: none;
-		min-width: 140px;
-        outline: none !important;
-    }
-	.modal-login .btn:hover, .modal-login .btn:focus {
-		background: #fbc838;
-	}
-	.modal-login .hint-text {
-		text-align: center;
-		padding-top: 5px;
-		font-size: 13px;
-	}
-	.modal-login .modal-footer {
-		color: #999;
-		border-color: #dee4e7;
-		text-align: center;
-		margin: 0 -25px -25px;
-		font-size: 13px;
-		justify-content: center;
-	}
-	.modal-login a {
-		color: #fff;
-		text-decoration: underline;
-	}
-	.modal-login a:hover {
-		text-decoration: none;
-	}
-	.modal-login a {
-		color: #fbc838;
-		text-decoration: none;
-	}	
-	.modal-login a:hover {
-		text-decoration: underline;
-	}
-	.modal-login .fa {
-		font-size: 21px;
-	}
-	.trigger-btn {
-		display: inline-block;
-	}
-    </style>
+    
   </head>
 
   <body>
@@ -232,7 +42,7 @@
           >
         </a>
     </nav>
-    <body>
+    
       <div class="signup-form mt-5 text-center" id="signup">
           <form action="/examples/actions/confirmation.php" method="post">
           <h2>Sign Up</h2>
