@@ -73,15 +73,14 @@
                 </ul>
             </div>
 
-            <!--Cart and Sing up/Login buttons -->
-        <a href="/checkout.html" class="btn btn-white" data-tooltip="tooltip" title="Cart">
-            <img src="images/cart.png" alt="cart" width="50" height="50">
-          </a>
-
-
             <button class="btn btn-white" data-toggle="modal" data-target="#loginModal" data-tooltip="tooltip" title="Sign-Up/Login">
                 <a href="/signup.html" class="fas fa-user-alt fa-2x px-3" style= "color:#fbc838"></a>
             </button>
+
+            <!--Cart and Sing up/Login buttons -->
+            <div id="paypal-button-container"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+
         </div>
     </nav>
 
@@ -114,7 +113,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Products -->
         <div class="container">
             <div class="row">
@@ -130,17 +129,29 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <label>Quantity</label>
                             <div class="form-group row">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <a class="cart-button" href="cart">
-                                    <img src="images/cart.png"
-                                         alt="cart"
-                                         width="35"
-                                         height="35" />
-                                </a>
+                                <form
+                                target="paypal"
+                                action="https://www.paypal.com/cgi-bin/webscr"
+                                method="post"
+                                >
+                                <input type="hidden" name="cmd" value="_s-xclick" />
+                                <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
+                                <input
+                                type="image"
+                                src="http://www.stoneygf1.com/images/cart.png"
+                                border="0"
+                                name="submit"
+                                alt="PayPal - The safer, easier way to pay online!"
+                                />
+                                <img
+                                alt=""
+                                border="0"
+                                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                width="1"
+                                height="1"
+                                />
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -158,17 +169,29 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <label>Quantity</label>
                             <div class="form-group row">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <a class="cart-button" href="cart">
-                                    <img src="images/cart.png"
-                                         alt="cart"
-                                         width="35"
-                                         height="35" />
-                                </a>
+                                <form
+                                target="paypal"
+                                action="https://www.paypal.com/cgi-bin/webscr"
+                                method="post"
+                                >
+                                <input type="hidden" name="cmd" value="_s-xclick" />
+                                <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
+                                <input
+                                type="image"
+                                src="http://www.stoneygf1.com/images/cart.png"
+                                border="0"
+                                name="submit"
+                                alt="PayPal - The safer, easier way to pay online!"
+                                />
+                                <img
+                                alt=""
+                                border="0"
+                                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                width="1"
+                                height="1"
+                                />
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -268,17 +291,14 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <label>Quantity</label>
+
                             <div class="form-group row">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <a class="cart-button" href="cart">
-                                    <img src="images/cart.png"
-                                         alt="cart"
-                                         width="35"
-                                         height="35" />
-                                </a>
+                                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8">
+                                    <input type="image" src="images/cart.png" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img href="cart" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="3" height="3">
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -567,12 +587,7 @@
         </div>
     </div>
 </div>
-<!-- Modal: modalCart -->
-<!-- /.container -->
-  </div>
-  </div>
-  </div>
-  </div>
+
 
 <!-- Bootstrap core JavaScript -->
 <script src="js/custom.js"></script>
@@ -589,7 +604,31 @@
         });
     });
 </script>
-
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'horizontal',
+            label: 'checkout',
+            
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+  </script>
 
 </body>
 </html>
