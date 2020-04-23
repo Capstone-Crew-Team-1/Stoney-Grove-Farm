@@ -74,7 +74,7 @@
             </div>
 
             <button class="btn btn-white" data-toggle="modal" data-target="#loginModal" data-tooltip="tooltip" title="Sign-Up/Login">
-                <a href="/signup.html" class="fas fa-user-alt fa-2x px-3" style= "color:#fbc838"></a>
+                <a href="/signup.html" class="fas fa-user-alt fa-2x px-3" style="color:#fbc838"></a>
             </button>
 
             <!--Cart and Sing up/Login buttons -->
@@ -105,514 +105,268 @@
                         <!--Catergories buttons list-->
                         <a href="#link" button class="btn btn-dark" type="button" style="color:gold">All</button></a>
                         <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Beef</button></a>
-                        <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Eggs</button></a>
-                        <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Syrup</button></a>
                         <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Honey</button></a>
+                        <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Syrup</button></a>
+                        <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Eggs</button></a>
                         <a href="#link" button class="btn btn-dark" type="button" style="color:gold">Merchandise</button></a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Products -->
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+            <div class="row cms-editable" id="content">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
+                    <!-- Product Card -->
+                    <div class="card h-100 cms-repeatable">
+                        <img class="card-img-top " src="images/Beef.JPG">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Beef</h4>
+                            <p class="card-text cms-unlock">
+                                We raise all natural, grass-fed registered British Park
+                                White beef cattle. That&apos;s a mouthful, just like our delicious beef. Our customers
+                                have told us they love the natural flavor! Our beef is hormone and antibiotic free.
+                                (For pickup only)
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <label>Quantity</label>
+                            <div class="form-group row" id="product_footer">
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
+                                </div>
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>Cow 1</option>
+                                        <option>Cow 2</option>
+                                        <option>Cow 3</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8"> 
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png"> 
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/T-Bone Steak.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">T-Bone Steak</h4>
-                            <p class="card-text cms-editable">
-                                If you're feeling very hungry, try one of our massive t-bone steaks.
+                        <img width="242" height="311" class="card-img-top" src="images/Free-Range%20Eggs.jpg">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Free-Range Eggs</h4>
+                            <p>
+                                We have different types of chickens that produce white, brown, tan, and other colors. If
+                                you buy our eggs you might find a pink or blue egg in your box.               (For
+                                pickup only)
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
                                 <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                    <input class="form-control" type="number" min="0"
+                                           max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Ground Sirloin.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Ground Sirloin</h4>
-                            <p class="card-text cms-editable">
-                                Do you prefer burgers on the lean side? Enjoy our ground sirloin option.
+                        <img width="291" height="313" class="card-img-top " src="images/Apple%20Cider%20Syrup.jpg">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Apple Cider Syrup</h4>
+                            <p class="card-text cms-unlock">
+                                100% syrup produced from a variety of Michigan apples. No
+                                additives, no extra ingredients. Just pure cider syrup. Shake before using. Refrigerate
+                                after opening. Use in recipes using apples.
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>250ml</option>
+                                        <option>500ml</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable" src="images/New York Strip.jpg" alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">New York Strip Steak</h4>
-                            <p class="card-text cms-editable">
-                                Grill up some new york strip steak, straight from our farms.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <label>Quantity</label>
-                            <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
-                    <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Eggs.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Jumbo Eggs</h4>
-                            <p class="card-text cms-editable">
-                                Need something larger when it comes to eggs? We also have jumbo sized eggs for you to enjoy.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <label>Quantity</label>
-                            <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
-                    <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/wff-ribeye-steak.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Ribeye Steak</h4>
-                            <p class="card-text cms-editable">
-                                Throw some of our fresh ribeye steaks on a grill this summer.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <label>Quantity</label>
-                            <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
-                    <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Syrup 2.0.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
+                        <img class="card-img-top " src="images/Syrup%203.0.jpg">
+                        <div class="card-body cms-unlock">
                             <h4 class="card-title">Maple Syrup</h4>
-                            <p class="card-text cms-editable">
-                                Try our real maple syrup. It's great on pancakes, waffles, and ice cream.
+                            <p class="card-text cms-unlock">
+                                100% <em>&quot;Mitten Made&quot;</em> syrup, tapped from
+                                our own maple trees at Stoney Grove Farm. Hand processed from beginning to end.
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>250 ml</option>
+                                        <option>500 ml</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Boiled Egg.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Boiled Eggs</h4>
-                            <p class="card-text cms-editable">
-                                Need a snack to go? Try some boiled eggs.
+                        <img width="238" height="292" class="card-img-top " src="images/Walnut%20Syrup.jpg">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Black Walnut Syrup</h4>
+                            <p class="card-text cms-unlock">
+                                Beautiful gold color, and a delicious nutty flavor, tapped
+                                from our Stoney Grove Farm trees. Hand processed from the beginning to end.
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>250 ml</option>
+                                        <option>500 ml</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Eggs 2.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Eggs</h4>
-                            <p class="card-text cms-editable">
-                                Have some of our eggs, fresh from the farm.
+                        <img width="228" height="286" class="card-img-top" src="images/Lavender%20Honey.jpg">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Lavender Honey</h4>
+                            <p class="card-text cms-unlock">
+                                Our all natural honey is locally produced in an area loaded
+                                with wildflowers, resulting in a sweet blend of flavors. From extraction to bottling
+                                our practices preserve the healthy qualities of pollens and enzymes.
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>5.5 oz</option>
+                                        <option>13.5 oz</option>
+                                        <option>16 oz</option>
+                                        <option>18 oz</option>
+                                        <option>1 gal</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/strawberryjam.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Strawberry Jam</h4>
-                            <p class="card-text cms-editable">
-                                Wake up to some toast in the morning with our very own strawberry jam.
+                        <img width="241" height="301" class="card-img-top" src="images/Honey.jpg">
+                        <div class="card-body cms-unlock">
+                            <h4 class="card-title">Raw Unfiltered Honey</h4>
+                            <p class="card-text cms-unlock">
+                                <span style="display: inline !important; float: none; background-color: #ffffff; color: #212529; font-family: -apple-system,BlinkMacSystemFont,&apos;Segoe UI&apos;,Roboto,&apos;Helvetica Neue&apos;,Arial,&apos;Noto Sans&apos;,sans-serif,&apos;Apple Color Emoji&apos;,&apos;Segoe UI Emoji&apos;,&apos;Segoe UI Symbol&apos;,&apos;Noto Color Emoji&apos;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">
+                                    Our
+                                    all natural honey is locally produced in an area loaded with wildflowers, resulting
+                                    in a sweet blend of flavors. From extraction to bottling our practices preserve the
+                                    healthy qualities of pollens and enzymes.
+                                </span>
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                <div class="col-lg-4 col-md-4 col-sm-4" id="card_footer_options">
+                                    <input class="form-control" type="number" min="0" max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
+                                <div class="col-lg-6 col-md-4 col-sm-4" id="card_footer_options">
+                                    <select class="form-control">
+                                        <option>5.5 oz</option>
+                                        <option>13.5 oz</option>
+                                        <option>16 oz</option>
+                                        <option>18 oz</option>
+                                        <option>1 gal</option>
+                                    </select>
+                                </div>
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3 cms-repeatable">
                     <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Honey Comb.png"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Honey Comb</h4>
-                            <p class="card-text cms-editable">
-                                Want honey in an even more raw state? Try our farm's honey comb.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <label>Quantity</label>
-                            <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
-                    <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Ground Beef.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
-                            <h4 class="card-title">Ground Beef</h4>
-                            <p class="card-text cms-editable">
-                                Enjoy some delicious burgers with our fresh ground beef.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <label>Quantity</label>
-                            <div class="form-group row" id="product_footer">
-                                <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
-                                </div>
-                                <form target="paypal"
-                                      id="paypal"
-                                      action="https://www.paypal.com/cgi-bin/webscr"
-                                      method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                           id="cart"
-                                           src="http://www.stoneygf1.com/images/cart.png"
-                                           border="0"
-                                           name="submit"
-                                           width="35"
-                                           height="35"
-                                           alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                         border="0"
-                                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                         width="1"
-                                         height="1" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 py-3">
-                    <div class="card h-100">
-                        <img class="card-img-top cms-editable"
-                             src="images/Bear Lamp.jpg"
-                             alt="" />
-                        <div class="card-body cms-editable">
+                        <img width="258" height="278" class="card-img-top" alt src="images/Bear Lamp.jpg">
+                        <div class="card-body cms-unlock">
                             <h4 class="card-title">Bear Lamp</h4>
-                            <p class="card-text cms-editable">
-                                Let our honey light up your day with our honey-bear themed lamps.
+                            <p class="card-text cms-unlock">
+                                Let our honey light up your day with our honey-bear themed
+                                lamps.
                             </p>
                         </div>
                         <div class="card-footer">
                             <label>Quantity</label>
                             <div class="form-group row" id="product_footer">
                                 <div class="col-lg-10 col-md-8 col-sm-9">
-                                    <input type="number" class="form-control" value="1" min="0" max="99" />
+                                    <input class="form-control" type="number" min="0"
+                                           max="99" value="1">
                                 </div>
-                                <form target="paypal"
-                                        id="paypal"
-                                        action="https://www.paypal.com/cgi-bin/webscr"
-                                        method="post">
-                                    <input type="hidden" name="cmd" value="_s-xclick" />
-                                    <input type="hidden" name="hosted_button_id" value="H9HXKEYYWSDW8" />
-                                    <input type="image"
-                                            id="cart"
-                                            src="http://www.stoneygf1.com/images/cart.png"
-                                            border="0"
-                                            name="submit"
-                                            width="35"
-                                            height="35"
-                                            alt="PayPal - The safer, easier way to pay online!" />
-                                    <img alt=""
-                                            border="0"
-                                            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                            width="1"
-                                            height="1" />
+                                <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                                    <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8">
+                                    <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png">
+                                    <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
                                 </form>
                             </div>
                         </div>

@@ -159,6 +159,11 @@ input {
     margin-bottom: 0rem;
 }
 
+#card_footer_options {
+    padding-left: 0rem;
+    padding-right: 10px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
