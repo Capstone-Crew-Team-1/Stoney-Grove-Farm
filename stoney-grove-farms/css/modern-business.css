@@ -147,6 +147,18 @@ input {
   width: 2%;
 }
 
+#cart {
+    width:auto;
+}
+
+#paypal {
+    width: 35px;
+}
+
+#product_footer {
+    margin-bottom: 0rem;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
