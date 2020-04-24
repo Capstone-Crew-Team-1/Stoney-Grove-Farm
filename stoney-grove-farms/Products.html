@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+﻿<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8" /> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />  
 
     <title>Stoney Grove Farms</title>
 
@@ -78,8 +78,11 @@
             </button>
 
             <!--Cart and Sing up/Login buttons -->
-            <div id="paypal-button-container"></div>
-            <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+            <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="H9HXKEYYWSDW8"> 
+                <input name="submit" width="35" height="35" id="cart" type="image" alt="PayPal - The safer, easier way to pay online!" src="http://www.stoneygf1.com/images/cart.png"> 
+                <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0">
+            </form>
 
         </div>
     </nav>

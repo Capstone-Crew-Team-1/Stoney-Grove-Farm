@@ -4,21 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 .portfolio-item {
   margin-bottom: 30px;
 }
 /* Social Media Styles */
-.fa {
+.fa, .fas {
   margin: 2px;
   padding: 7px;
   font-size: 20px;
@@ -183,7 +175,7 @@ input:disabled {
   background-color: #fbc838;
 }
 
-.carousel-caption h3,
+.carousel-caption h4,
 h1 {
   background-color: rgba(245, 245, 245, 0.75);
   color: black;
@@ -191,3 +183,13 @@ h1 {
 }
 
 /*Card Gallery*/
+
+
+  #carouselImageGallery .carousel-item img{
+  height: 400px;
+  width: 200px;
+  }
+  #carouselImageGallery{
+    max-width: 600px;
+  }
+
